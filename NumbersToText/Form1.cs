@@ -23,12 +23,12 @@ namespace NumbersToText
         }
 
 
-        private void submitConvert(object sender, EventArgs e)
+        private void SubmitConvert(object sender, EventArgs e)
         {
-            int TxtBox;
+            int txtBox;
 
-            bool isNumber = Int32.TryParse(NoInput.Text, out TxtBox);
-            String intToText = TxtBox.ToWords(new CultureInfo(LangListBox.GetItemText(LangListBox.SelectedItem)));
+            bool isNumber = Int32.TryParse(NoInput.Text, out txtBox);
+            String intToText = txtBox.ToWords(new CultureInfo(LangListBox.GetItemText(LangListBox.SelectedItem)));
             if (isNumber == true)
             {
                 if (intToText.Contains(NoInput.Text)) MessageBox.Show("Language not supported yet!");

@@ -56,7 +56,7 @@
             this.submit.TabIndex = 2;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
-            this.submit.Click += new System.EventHandler(this.submitConvert);
+            this.submit.Click += new System.EventHandler(this.SubmitConvert);
             // 
             // Form1
             // 
